@@ -33,8 +33,30 @@ to get current remote origin
     git config --get remote.origin.url 
     
 to remove current remote origin
+
     git remote remove origin
 
+
+8- now we should create ssh key using this command
+
+    ssh-keygen -t ed25519 -C "your_email@example.com"
+
+we can get the set email using
+    git config user.email
+    
+#important note: don't name the file keep clicking enter. This will cause a problem and not create .ssh folder
+
+9- then we copy the content of SSH-KEY-NAME.pub 
+
+    clip < DIRECTORY_OF_PUB_FILE
+
+10- add the ssh key to github account
+
+    settings > access > add ssh and gpg keys > add ssh
+
+then paste the content of the file. 
+
+Congratulation 🎉🎉
 
 
     
